@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* pakai border-box biar boxnya ngga nambah lebar */
+}
+
+body {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+header {
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.inputForm {
+    background-color: rgb(211, 167, 57);
+    display: flex;
+    flex-wrap: wrap; /* biar kalo tampilan tidak muat kesamping, akan otomatis diturunin kebawah */
+    gap: 10px; /* kasih jarak antara input formnya */
+    padding: 15px;
+}
+
+.inputForm input {
+    padding: 5px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(238, 204, 118);
+}
+
+.inputForm button {
+    padding: 5px 10px; /* 5px itu yg atas bwh, 10px itu yg kiri kanan */
+    text-align: center;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(238, 204, 118);
+    cursor: pointer;
+}

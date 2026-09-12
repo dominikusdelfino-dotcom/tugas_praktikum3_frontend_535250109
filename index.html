@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>TRACKING PENGELUARAN</h1>
+    </header>
+
+    <div class="inputForm">
+        <input type="text" id="nama" placeholder="Nama Anda">
+        <input type="number" id="nominal" placeholder="Nominal (Rp)">
+        <input type="text" id="keterangan" placeholder="Keterangan Pengeluaran">
+        <input type="date" id="waktu">
+        <button id="tmbhPengeluaran" disabled>Tambahkan Pengeluaran</button>
+    </div>
+
+    <div>
+        <table id="tabel">
+            <thead> <!-- head tabel: buat mengelompokokan th -->
+                <tr> <!-- baris tabel. Jadi kalo pakai tr, yg th nya munculnya sebaris semua -->
+                    <th>Nama</th> <!-- kolom tabel -->
+                    <th>Nominal</th>
+                    <th>Keterangan</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div class="total">
+        Total Pengeluaran: Rp<span id="total">0,00</span> <!-- pakai span itu biar muncul total pengeluarannya tetep di baris yg sm -->
+    </div>
+
+    <div class="fiturHapus" id="hapusPengeluaran">
+        <h2>Hapus Pengeluaran</h2>
+        <p>Apakah Anda yakin ingin menghapus pengeluaran ini?</p>
+        <button class="confirm" id="confirmHapus">
+            Iya
+        </button>
+        <button class="cancel" onclick="tutup('hapusPengeluaran')"> <!-- onclick itu biar kalo pas diklik tombol "Tidak", akan menjalani fungsi si "tutup" -->
+            Tidak
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
