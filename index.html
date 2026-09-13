@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Expense Tracker</title>
+    <title>535250109</title>
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@
     </div>
 
     <div>
-        <table id="tabel">
+        <table>
             <thead> <!-- head tabel: buat mengelompokokan th -->
                 <tr> <!-- baris tabel. Jadi kalo pakai tr, yg th nya munculnya sebaris semua -->
                     <th>Nama</th> <!-- kolom tabel -->
@@ -30,6 +30,7 @@
                     <th>Aksi</th>
                 </tr>
             </thead>
+            <tbody id="tabel"></tbody>
         </table>
     </div>
 
@@ -38,14 +39,16 @@
     </div>
 
     <div class="fiturHapus" id="hapusPengeluaran">
-        <h2>Hapus Pengeluaran</h2>
-        <p>Apakah Anda yakin ingin menghapus pengeluaran ini?</p>
-        <button class="confirm" id="confirmHapus">
-            Iya
-        </button>
-        <button class="cancel" onclick="tutup('hapusPengeluaran')"> <!-- onclick itu biar kalo pas diklik tombol "Tidak", akan menjalani fungsi si "tutup" -->
-            Tidak
-        </button>
+        <div class="modalBox">
+            <h2>Hapus Pengeluaran</h2>
+            <p>Apakah Anda yakin ingin menghapus pengeluaran ini?</p>
+            <button class="confirm" id="confirmHapus">
+                Iya
+            </button>
+            <button class="cancel" onclick="closeFiturHapus('hapusPengeluaran')"> <!-- onclick itu biar kalo pas diklik tombol "Tidak", akan menjalani fungsi si "closeFiturHapus" -->
+                Tidak
+            </button>
+        </div>
     </div>
 
     <script src="script.js"></script>
